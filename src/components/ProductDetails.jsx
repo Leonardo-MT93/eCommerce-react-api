@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./ProductDetails.css";
+import { Loader } from "./Loader";
+import './Loader.css'
 
 export const ProductDetails = () => {
   const { id } = useParams();
@@ -20,9 +22,8 @@ export const ProductDetails = () => {
   };
 
   const handleChange = (e) => {
-    
-    parseInt(e.target.value)
-  }
+    parseInt(e.target.value);
+  };
   return (
     <div className="item-info-detailed">
       <div className="item-info-container">
@@ -84,14 +85,23 @@ export const ProductDetails = () => {
                 </div>
               </div>
               <div className="selector-quantity">
-              <input className="input-quantity" type="number" min={1} max={item.stock} onChange={(e) => handleChange(e)} placeholder="Quantity"/>
+                <input
+                  className="input-quantity"
+                  type="number"
+                  min={1}
+                  max={item.stock}
+                  onChange={(e) => handleChange(e)}
+                  placeholder="Quantity"
+                />
 
                 <button className="product-button">BUY</button>
               </div>
             </div>
           </div>
         ) : (
-          <div>cargando..</div>
+          <div className="loader-overlay">
+            <Loader />
+          </div>
         )}
       </div>
 

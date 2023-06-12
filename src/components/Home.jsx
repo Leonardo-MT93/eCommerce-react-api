@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card } from "./Card";
+import { Loader } from "./Loader";
 
 export const Home = () => {
   const [allproducts, setProducts] = useState();
@@ -22,7 +23,9 @@ export const Home = () => {
       allproducts.map((product) => (
         <Card key={product.id} product={product} />
       ))
-    :<h1>no hay articulos</h1>}
+    :<div className="loader-overlay">
+      <Loader/>
+      </div>}
     </div>
   );
 };
