@@ -3,22 +3,22 @@
 1. Diseño y estructura del proyecto:
 
 
-Crea la estructura de carpetas y archivos del proyecto.
-Configura el enrutamiento de la aplicación utilizando React Router para manejar las diferentes vistas.
-Crea componentes de diseño como encabezado, pie de página y navegación.
+✅Crea la estructura de carpetas y archivos del proyecto.
+✅Configura el enrutamiento de la aplicación utilizando React Router para manejar las diferentes vistas.
+✅Crea componentes de diseño como encabezado, pie de página y navegación.
 
 2. Obtención de datos de productos:
 
 
-Utiliza la API de dummyjson.com para generar datos ficticios de productos en formato JSON.
-Utiliza el hook useEffect para realizar una solicitud HTTP y obtener los datos de productos desde la API.
-Parsea y almacena los datos de productos en el estado utilizando el hook useState.
+✅Utiliza la API de dummyjson.com para generar datos ficticios de productos en formato JSON.
+✅Utiliza el hook useEffect para realizar una solicitud HTTP y obtener los datos de productos desde la API.
+✅Parsea y almacena los datos de productos en el estado utilizando el hook useState.
 
 3. Visualización de productos:
 
 
-Crea un componente para mostrar una lista de productos.
-Renderiza los datos de productos en el componente utilizando el método map.
+✅Crea un componente para mostrar una lista de productos.
+✅Renderiza los datos de productos en el componente utilizando el método map.
 Implementa la funcionalidad para mostrar los detalles de un producto cuando se hace clic en él.
 
 4. Funcionalidad del carrito de compras:

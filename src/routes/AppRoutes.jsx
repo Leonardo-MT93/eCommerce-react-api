@@ -8,6 +8,7 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path='/' element={<Home/>}  />
+      <Route path='/home' element={<Home/>}  />
       <Route path='/products' element={<AllProducts/>}  />
       <Route path='/products/:id' element={<ProductDetails/>}  />
       <Route path='/cart' element={<Cart/>}  />
