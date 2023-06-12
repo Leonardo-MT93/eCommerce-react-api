@@ -59,9 +59,41 @@
     height: 225px;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     justify-content: space-evenly;
   }
+  .item-price{
+    font-size: x-large;
+  }
+
+  /* Input y Boton */
+  .selector-quantity{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-quantity{
+    width: 25%;
+    height: 30px;
+    text-align: center;
+  }
+  .product-button{
+    width: 35%;
+    height: 60PX;
+    background-color: #fbb72c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+.product-button:hover{
+    color: black;
+}
+
+
 
 /* All images of item */
 .container-imgs{
