@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./ProductDetails.css";
 
 export const ProductDetails = () => {
@@ -49,13 +49,30 @@ export const ProductDetails = () => {
               </div>
             </div>
             <div className="item-datainfo">
-              <h2>{item.title}</h2>
-              <h3>{item.brand}</h3>
-              <h2>{item.category}</h2>
-              <h3>{item.rating}</h3>
-              <p>{item.price}</p>
+              <div className="category-data">
+                <Link className="category-link" to={`category/${item.category}`}><h2>{item.category}</h2></Link>
+              </div>
+              <div className="title-data">
+              <h2 className="title-data-styles">{item.title}</h2>
+              <h3>{item.rating}⭐</h3>
+              </div>
+              <h3 className="title-data-brand">{item.brand}</h3>
+              <div className="details-data">
               <p>{item.description}</p>
-              <p>{item.stock}</p>
+              <div className="title-data">
+              <p>${item.price}</p>
+              <p>Stock: {item.stock}units.</p>
+                </div>
+              
+              
+              
+              </div>
+              
+              
+              
+              
+              
+              
               <input type="text" placeholder="Qty" />
               <button>BUY</button>
             </div>
@@ -65,7 +82,10 @@ export const ProductDetails = () => {
         )}
       </div>
 
-      <div className="related-items"></div>
+      <div className="related-items">
+        <h4>Productos relacionados</h4>
+
+      </div>
     </div>
   );
 };

@@ -22,9 +22,48 @@
     grid-template-rows: 1fr;
     gap: 10px;
 }
+/* Details of item */
 .item-datainfo{
     grid-column: 4/6;
 }
+.category-data{
+    width: 90%;
+    text-align: end;
+    font-size: large;
+}
+.category-link{
+    color: rgb(102, 102, 102);
+    text-decoration: none; /* Elimina la línea de subrayado */
+}
+.category-link:hover {
+    text-decoration: underline;
+  }
+
+  .title-data{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-data-styles{
+    font-size: 30px;
+    margin: 0;
+  }
+  .title-data-brand{
+    font-size: 22px;
+    margin-top: 0;
+    color: rgb(39, 35, 35);
+  }
+  .details-data{
+    width: 90%;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: space-evenly;
+  }
+
+/* All images of item */
 .container-imgs{
     grid-column: 1/1;
     list-style: none;
