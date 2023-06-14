@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
+import { useCart } from "../hooks/useCart";
 export const Card = ({ product }) => {
 
-  const handleClick = () => {
-    console.log(product.id)
-  }
+  const { addToCart} = useCart()
+
+
 
   return (
     <>
-      <div className="product-card" onClick={(e)=>handleClick(e)}>
+      <div className="product-card" >
         <Link to={`/products/${product.id}`} className="item-data"/>
         <div className="product-tumb">
           <img src={product.thumbnail} alt={product.title} />
@@ -24,7 +25,7 @@ export const Card = ({ product }) => {
         <div className="product-bottom-details">
           <div className="product-price">
             <p>${product.price}</p>
-            <button className="product-button">BUY</button>
+            <button className="product-button" onClick={()=>addToCart(product)}>BUY</button>
           </div>
         </div>
       </div>

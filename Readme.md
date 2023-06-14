@@ -19,7 +19,7 @@
 
 ✅Crea un componente para mostrar una lista de productos.
 ✅Renderiza los datos de productos en el componente utilizando el método map.
-Implementa la funcionalidad para mostrar los detalles de un producto cuando se hace clic en él.
+✅Implementa la funcionalidad para mostrar los detalles de un producto cuando se hace clic en él.
 
 4. Funcionalidad del carrito de compras:
 

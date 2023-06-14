@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Card } from "./Card";
 import { Loader } from "./Loader";
 
+
 export const Home = () => {
   const [allproducts, setProducts] = useState();
   useEffect(() => {
@@ -9,7 +10,6 @@ export const Home = () => {
       const response = await fetch("https://dummyjson.com/products");
       const res = await response.json();
       const { products } = res;
-      console.log(products)
       setProducts(products);
     };
     getProducts();

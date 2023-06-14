@@ -1,8 +1,8 @@
-import './Footer.css'
+import { useCart } from "../hooks/useCart";
+import "./Footer.css";
 const Footer = () => {
-  return (
-    <footer className="footer">footer</footer>
-  )
-}
+  const { cart } = useCart();
+  return <footer className="footer">{JSON.stringify(cart, null, 2)}</footer>;
+};
 
-export default Footer
+export default Footer;
