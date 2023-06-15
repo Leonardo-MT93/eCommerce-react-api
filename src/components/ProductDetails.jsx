@@ -3,11 +3,13 @@ import { Link, useParams } from "react-router-dom";
 import "./ProductDetails.css";
 import { Loader } from "./Loader";
 import './Loader.css'
+import { useCart } from "../hooks/useCart";
 
 export const ProductDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState();
   const [imageSelected, setImageSelected] = useState();
+  const {addToCart} = useCart()
   useEffect(() => {
     const getItem = async () => {
       const response = await fetch(`https://dummyjson.com/products/${id}`);
@@ -94,7 +96,7 @@ export const ProductDetails = () => {
                   placeholder="Quantity"
                 />
 
-                <button className="product-button">BUY</button>
+                <button className="product-button" onClick={() => addToCart(item)}>BUY</button>
               </div>
             </div>
           </div>
