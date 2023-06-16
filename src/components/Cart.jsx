@@ -14,7 +14,8 @@ export const Cart = () => {
       </label>
       <input id={cartCheckboxId} type="checkbox" hidden />
       <aside className="cart">
-        <ul>
+        <ul className="list-items">
+          
     {cart.map(product => (
       <CartItem key={product.id}
       addToCart={()=> addToCart(product)}

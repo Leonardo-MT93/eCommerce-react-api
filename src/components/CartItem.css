@@ -1,10 +1,40 @@
 .item-cart{
     width: 100%;
-    height: 150px;
-    border: 1px solid red;
+    height: 75px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    padding: 5px 0; 
+    margin: 5px 0;
+    background-color: rgb(179, 172, 172); 
 }
 
 .img-cart{
+    width: 75px;
+    height: 75px;
+}
+.container-info{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 75px;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 5px;
+}
+.container-quantity{
+    width: 35%;
+    display: flex;
+}
+.container-price{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 75px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.input-cart{
     width: 50px;
-    height: 50px;
+    text-align: center;
 }

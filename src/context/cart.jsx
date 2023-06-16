@@ -10,6 +10,7 @@ export const CartProvider = ({children}) => {
         if(productInCartIndex >= 0){
             const newCart = structuredClone(cart)
             newCart[productInCartIndex].quantity+=1
+            newCart[productInCartIndex].price+=newCart[productInCartIndex].price
             return setCart(newCart)
         }
 
