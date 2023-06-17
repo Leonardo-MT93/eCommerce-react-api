@@ -24,8 +24,8 @@
 4. Funcionalidad del carrito de compras:
 
 
-Crea un componente para mostrar el carrito de compras.
-Utiliza el hook useState para almacenar y actualizar el estado del carrito de compras.
+✅Crea un componente para mostrar el carrito de compras.
+✅Utiliza el hook useState para almacenar y actualizar el estado del carrito de compras.
 Implementa la funcionalidad para agregar productos al carrito, actualizar la cantidad de productos y eliminar productos.
 
 5. Autenticación de usuarios:

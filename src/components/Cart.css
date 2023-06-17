@@ -41,3 +41,15 @@
     height: 100%;
     display: block;
   }
+  .bnt-delete-allitems{
+    color: red;
+    font-size: small;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .bnt-delete-allitems:hover{
+    background-color: black;
+    border: 2.5px solid red;
+  }
