@@ -4,17 +4,20 @@ import Footer from "./components/footer";
 import { AppRoutes } from "./routes/AppRoutes";
 import Header from "./components/Header";
 import { Cart } from "./components/Cart";
+import { LoginProvider } from "./context/login";
 
 function App() {
   return (
-    <Router>
-      <main>
-        <Header/>
-        <Cart/>
-        <AppRoutes />
-        <Footer />
-      </main>
-    </Router>
+    <LoginProvider>
+      <Router>
+        <main>
+          <Header />
+          <Cart />
+          <AppRoutes />
+          <Footer />
+        </main>
+      </Router>
+    </LoginProvider>
   );
 }
 

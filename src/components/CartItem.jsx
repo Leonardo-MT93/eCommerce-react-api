@@ -25,7 +25,7 @@ export const CartItem = ({ thumbnail, price, title, addToCart, quantity, deleteI
       </div>
       <div className="container-price">
         <button onClick={handleDelete}><TrashIcon  /></button>
-        <span className="price-item">${price}</span>
+        <span className="price-item">${quantity*price}</span>
       </div>
     </li>
   );

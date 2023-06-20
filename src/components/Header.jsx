@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { LoginContext } from "../context/login";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
+  const { userConnected, logout } = useContext(LoginContext);
+  console.log(userConnected)
+  const handleLogout = () => {
+    logout();
+  };
   return (
     <header className="header">
       <nav className="header-nav">
@@ -47,9 +52,18 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="menu-links" to="/account">
-              Mi cuenta
-            </Link>
+            {userConnected ? (
+              <>
+                <span className="username">{userConnected.username}</span>
+                <a className="logout-button" onClick={handleLogout}>
+                  Logout
+                </a>
+              </>
+            ) : (
+              <Link className="menu-links" to="/account">
+                Mi cuenta
+              </Link>
+            )}
           </li>
         </ul>
         <div

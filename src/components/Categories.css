@@ -1,0 +1,20 @@
+.categories-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 80svh;
+}
+
+.list-categories{
+    list-style: none;
+    
+    border: 1px solid red;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50px;
+    border: 1px solid orange;
+}

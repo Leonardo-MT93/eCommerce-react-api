@@ -21,7 +21,7 @@
     text-decoration: none;
 }
 .menu{
-    width: 30%;
+    width: 45%;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -57,6 +57,18 @@
     color: white;
     font-size: 20px;
     border: none;
+}
+.username{
+    color: aqua;
+    padding: 0 5px;
+    text-decoration: underline;
+}
+.logout-button{
+    color: red;
+    cursor: pointer;
+}
+.logout-button:hover{
+    text-decoration: underline;
 }
 
 .cart-toggle {

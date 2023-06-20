@@ -31,9 +31,9 @@
 5. Autenticación de usuarios:
 
 
-Crea componentes para el inicio de sesión, registro de usuarios y cierre de sesión.
-Utiliza el hook useContext para administrar el estado global de autenticación.
-Implementa la funcionalidad de autenticación utilizando Firebase u otra plataforma de autenticación.
+✅Crea componentes para el inicio de sesión, registro de usuarios y cierre de sesión.
+✅Utiliza el hook useContext para administrar el estado global de autenticación.
+❌Implementa la funcionalidad de autenticación utilizando Firebase u otra plataforma de autenticación.
 
 6. Procesamiento de pagos ficticios:
 
